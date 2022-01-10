@@ -1,0 +1,24 @@
+.med-about-container {
+    width: 100%;
+    color: #000;
+    padding: 20px 80px;
+    background-color: #f8f8f8;
+}
+
+.med-about-p1 {
+    margin-top: 20px;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+
+.med-about-p2, .med-about-p3_1, .med-about-p3_2, .med-about-p4, .med-about-p5, .med-about-p6 { 
+    margin-top: 20px;
+
+}

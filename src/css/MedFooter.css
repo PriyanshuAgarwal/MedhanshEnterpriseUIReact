@@ -1,0 +1,24 @@
+.footer_strip {
+    background: #ff887b;
+    font-size: 15px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer_strip ul {
+    display: inline-table;
+    list-style-type: none !important;
+    line-height: 27px;
+}
+
+.footer_strip li {
+    color: #fff;
+    float: left;
+    margin: 0 13px;
+}
+
+.footer_strip li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+} 
