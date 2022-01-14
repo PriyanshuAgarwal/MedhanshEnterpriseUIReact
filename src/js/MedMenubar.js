@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../css/MedMenubar.css';
 
 class MedMenubar extends React.Component {
     render() {
       return (
-        <div className="container">
+        <div className="container med-menubar">
 		<nav className="navbar main-nav navbar-expand-lg">
 			<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
 				<span className="navbar-toggler-icon"></span>
@@ -17,7 +18,7 @@ class MedMenubar extends React.Component {
 					<li className="nav-item dropdown">
 						<a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Our Products </a>
 						<ul className="dropdown-menu">
-							<li><a className="dropdown-item" href="#"> Plastic granules </a></li>
+							<li><Link className="dropdown-item" to="/products/plastic-granules">Plastic granules</Link></li>
 							<li><a className="dropdown-item" href="#"> Natural Honey </a></li>
 							<li><a className="dropdown-item" href="#"> BOPP Tapes &raquo; </a>
 							<ul className="submenu dropdown-menu">

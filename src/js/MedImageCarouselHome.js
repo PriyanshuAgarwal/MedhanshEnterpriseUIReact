@@ -1,4 +1,6 @@
 import React from "react";
+import firstSlide from '../images/carousel_1.jpg';
+import secondSlide from '../images/carousel_2.jpg';
 
 
 class MedImageCarouselHome extends React.Component {
@@ -18,10 +20,10 @@ class MedImageCarouselHome extends React.Component {
 					</ol>
 					<div className="carousel-inner">
 						<div className="carousel-item active">
-							<img className="d-block w-70" src="images/template_photo_1.jpg" alt="First slide"></img>
+							<img className="d-block w-70" src={firstSlide} alt="First slide"></img>
 						</div>
 						<div className="carousel-item">
-							<img className="d-block w-70" src="images/template_photo_2.jpg" alt="Second slide"></img>
+							<img className="d-block w-70" src={secondSlide} alt="Second slide"></img>
 						</div>
 
 						<a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
