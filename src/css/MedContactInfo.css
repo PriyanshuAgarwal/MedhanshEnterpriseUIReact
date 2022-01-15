@@ -1,0 +1,40 @@
+.med-contactinfo {
+    padding: 30px 15px;
+}
+
+.footer_map {
+    background: url(https://tiimg.tistatic.com/catalogs/template100001/map.jpg) right center no-repeat;
+}
+
+.med-contactinfo .contact_detail {
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.med-contactinfo .address_area {
+ 
+    margin: 0 5% 0 0;
+    width: 40%;
+}
+
+.med-contactinfo .co_name_small {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.med-contactinfo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.med-contactinfo .contact {
+    color: #000;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: left;
+}

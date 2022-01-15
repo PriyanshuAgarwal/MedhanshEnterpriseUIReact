@@ -6,6 +6,7 @@ import MedVision from './MedVision';
 import MedLatestItem from './MedLatestItem';
 import MedAboutUs from './MedAboutUs';
 import MedFooter from './MedFooter';
+import MedContactInfo from './MedContactInfo';
 
 class MedHome extends React.Component {
     render() {
@@ -17,6 +18,7 @@ class MedHome extends React.Component {
                 <MedVision></MedVision>
                 <MedLatestItem></MedLatestItem>
                 <MedAboutUs></MedAboutUs>
+                <MedContactInfo></MedContactInfo>
                 <MedFooter></MedFooter>
             </div>
         )

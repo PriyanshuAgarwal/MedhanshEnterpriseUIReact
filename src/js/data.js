@@ -54,6 +54,49 @@ let granulesProducts = [
         id: "blue-color-pp-granules",
         title: "Blue Color Pp Granules"
     }
+]
+
+let honeyProducts = [
+    {
+        id: "dark-black-honey",
+        title: "dark black honey"
+    },
+    {
+        id: "jamun-honey",
+        title: "jamun honey"
+    },
+    {
+        id: "apple-honey",
+        title: "apple honey"
+    },
+    {
+        id: "goulab-Honey",
+        title: "Goulab Honey"
+    },
+    {
+        id: "tulsi-honey",
+        title: "A honey from Tulsi"
+    },
+    {
+        id: "acacia-honey",
+        title: "acacia honey"
+    },
+    {
+        id: "lychee-honey",
+        title: "lychee honey"
+    },
+    {
+        id: "eucalyptus-honey",
+        title: "eucalyptus honey"
+    },
+    {
+        id: "multi-flora-honey",
+        title: "Multi flora honey"
+    },
+    {
+        id: "karang-honey",
+        title: "karang honey"
+    }
 
 ]
 
@@ -63,4 +106,8 @@ export function getProduct() {
 
 export function getGranulesProducts() {
     return granulesProducts;
+}
+
+export function getHoneyProducts() {
+    return honeyProducts;
 }

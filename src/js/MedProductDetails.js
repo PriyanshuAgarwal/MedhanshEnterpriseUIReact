@@ -2,13 +2,11 @@ import React from "react";
 
 import "./data";
 import '../css/App.css';
-import { getProduct, getGranulesProducts } from "./data";
+import { getProduct, getGranulesProducts, getHoneyProducts } from "./data";
 import Header from "./Header";
 import MedMenubar from "./MedMenubar";
 import MedProductCard from "./MedProductCard";
 import '../css/MedProductDetails.css';
-import { useHistory } from 'react-router-dom';
-import { browserHistory } from 'react-router';
 
 class MedProductDetails extends React.Component {
     constructor(props) {
@@ -18,12 +16,13 @@ class MedProductDetails extends React.Component {
             products: [],
             productId: "",
             currentProduct: {},
-            granulesProducts: []
+            childProducts: []
         }
 
         this.fetchGranulesProducts = this.fetchGranulesProducts.bind(this);
         this.setChildProducts = this.setChildProducts.bind(this);
         this.setCurrentProduct = this.setCurrentProduct.bind(this);
+        this.fetchHoneyProducts = this.fetchHoneyProducts.bind(this);
     }
 
     componentDidMount() {
@@ -39,13 +38,17 @@ class MedProductDetails extends React.Component {
         })
 
         this.setState({ currentProduct: currentProductabc });
+        this.setChildProducts(currentProductabc);
     }
 
-    setChildProducts(currentProductabc) {
-        if (currentProductabc.id == "plastic-granules") {
+    setChildProducts(currentProduct) {
+        if (currentProduct.id == "plastic-granules") {
             this.fetchGranulesProducts();
+        } else if (currentProduct.id == "natural-honey") {
+            this.fetchHoneyProducts();
         }
     }
+
 
     componentWillReceiveProps(nextProps) {
         let oldProduct = this.props.location.pathname && this.props.location.pathname.split("/")[2];
@@ -58,17 +61,22 @@ class MedProductDetails extends React.Component {
 
     fetchGranulesProducts() {
         let granulesProducts = getGranulesProducts();
-        this.setState({ granulesProducts: granulesProducts });
+        this.setState({ childProducts: granulesProducts });
+    }
+
+    fetchHoneyProducts() {
+        let granulesProducts = getHoneyProducts();
+        this.setState({ childProducts: granulesProducts });
     }
 
     render() {
-        let { currentProduct, granulesProducts } = this.state;
+        let { currentProduct, childProducts } = this.state;
         console.log(currentProduct);
 
-        let granules = granulesProducts.map((granulesProduct) => {
+        let granules = childProducts.map((childProduct) => {
             return (<MedProductCard
-                key={granulesProduct.id}
-                title={granulesProduct.title}>
+                key={childProduct.id}
+                title={childProduct.title}>
             </MedProductCard>)
         });
         return (
