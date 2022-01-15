@@ -1,9 +1,6 @@
-
-
 .med-productcard {
     box-shadow: 0 0 5px grey;
 }
-
 
 .ratings i {
     font-size: 16px;
@@ -46,4 +43,8 @@ h5 {
 .med-productcard .col-md-10 {
     max-width: 100% !important;
     flex: auto;
+}
+
+.med-productcard {
+    margin-top: 20px;
 }

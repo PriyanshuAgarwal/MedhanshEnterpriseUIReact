@@ -19,7 +19,7 @@ class MedMenubar extends React.Component {
 						<a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Our Products </a>
 						<ul className="dropdown-menu">
 							<li><Link className="dropdown-item" to="/products/plastic-granules">Plastic granules</Link></li>
-							<li><a className="dropdown-item" href="#"> Natural Honey </a></li>
+							<li><Link className="dropdown-item" to="/products/natural-honey">Natural Honey</Link></li>
 							<li><a className="dropdown-item" href="#"> BOPP Tapes &raquo; </a>
 							<ul className="submenu dropdown-menu">
 									<li><a className="dropdown-item" href=""> Bopp tapes</a></li>
@@ -28,7 +28,7 @@ class MedMenubar extends React.Component {
 									<li><a className="dropdown-item" href=""> Transparent Bopp Tapes</a></li>
 							</ul>
 							</li>
-							<li><a className="dropdown-item" href="#"> Plastic waste raw material</a></li>
+							<li><Link className="dropdown-item" to="/products/industrial-plastic-raw-material">Plastic waste raw material</Link></li>
 						</ul>
 						</li>
 					

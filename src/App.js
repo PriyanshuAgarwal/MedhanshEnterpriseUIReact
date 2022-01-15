@@ -4,25 +4,22 @@ import React from "react";
 import MedHome from './js/MedHome';
 import MedCompanyProfile from './js/MedCompanyProfile';
 import MedProductDetails from './js/MedProductDetails';
+import { createBrowserHistory } from "history";
 import {
-  BrowserRouter,
-  Routes,
+  Router,
   Route
 } from "react-router-dom";
 
+const history = createBrowserHistory();
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MedHome />} />
-        <Route path="company-profile" element={<MedCompanyProfile />} />
-        <Route path="products" element={<MedProductDetails />}>
-          <Route path=":productId" element={<MedProductDetails />} />
-        
+    <Router history={history}>
+        <Route path="/"  exact component={MedHome} />
+        <Route path="/company-profile" component={MedCompanyProfile} />
+        <Route path="/products" component={MedProductDetails}>   
           </Route>
-      </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
