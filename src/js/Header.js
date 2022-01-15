@@ -15,7 +15,7 @@ class Header extends React.Component {
                                     <img itemProp="logo" src="https://tiimg.tistatic.com/images/l/2/logo_102742.png"
                                         alt="MEDHANSH ENTERPRISES"></img>
                                     <a href="index" className="navbar-brand brand"> Medhash Enterprises </a>
-                                    <div class="top_right_cont">
+                                    <div className="top_right_cont">
                                         <div className="phone">Call: 08045478108</div>
                                         <div className="head_link"><a href="/contact-us.html"><img src="https://tiimg.tistatic.com/catalogs/template100001/inquiry-icon.png"  style={{"marginRight": "8px"}}></img>Submit Inquiry</a><div className="clear"></div></div>
                                     </div>

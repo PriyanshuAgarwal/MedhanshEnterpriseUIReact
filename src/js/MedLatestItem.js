@@ -1,10 +1,14 @@
 import React from "react";
+import AdhesiveTape from '../images/Bopp-Printed-Self-Adhesive-Tape.jpg';
+import BlackHoney from "../images/Dark-Black-Honey.jpg";
+import IndustrialAdhesiveTape from "../images/Industrial-BOPP-Printed-Adhesive-Tape.jpg";
+import "../css/MedLatestItem.css";
 
 
 class MedLatestItem extends React.Component {
     render() {
         return (
-            <div>
+            <div className="med-latestitems">
                 <section className="item content">
                     <div className="container">
                         <div className="underlined-title">
@@ -33,7 +37,7 @@ class MedLatestItem extends React.Component {
                                                 <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
                                             </p>
                                         </div>
-                                        <span className="maxproduct"><img src="images/Bopp-Printed-Self-Adhesive-Tape.jpg"
+                                        <span className="maxproduct"><img src={AdhesiveTape}
                                             alt=""></img></span>
                                     </div>
                                     <div className="product-details">
@@ -60,7 +64,7 @@ class MedLatestItem extends React.Component {
                                                 <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
                                             </p>
                                         </div>
-                                        <span className="maxproduct"><img src="images/Dark-Black-Honey.jpg" alt=""></img></span>
+                                        <span className="maxproduct"><img src={BlackHoney} alt=""></img></span>
                                     </div>
                                     <div className="product-details">
                                         <a href="#">
@@ -78,21 +82,20 @@ class MedLatestItem extends React.Component {
                                 <div className="productbox">
                                     <div className="fadeshop">
                                         <div className="captionshop text-center" style={{display: "none"}}>
-                                            <h3>BOPP Printed Adhesive Tape</h3>
+                                            <h3>Industrial BOPP Printed Adhesive Tape</h3>
                                             <p>
                                                 Extensively used in electrical, pharmaceutical, glass and food processing industries for sealing of cartons.
                                             </p>
                                             <p>
-                                                { /*<a href="#" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a> */}
                                                 <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
                                             </p>
                                         </div>
-                                        <span className="maxproduct"><img src="images/Industrial-BOPP-Printed-Adhesive-Tape.jpg"
+                                        <span className="maxproduct"><img src={IndustrialAdhesiveTape}
                                             alt=""></img></span>
                                     </div>
                                     <div className="product-details">
                                         <a href="#">
-                                            <h1>BOPP Printed Adhesive Tape</h1>
+                                            <h1>Industrial BOPP Printed Adhesive Tape</h1>
                                         </a>
                                         <span className="price">
                                             <span className="edd_price">1800 INR/Box

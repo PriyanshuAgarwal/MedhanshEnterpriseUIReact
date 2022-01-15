@@ -1,0 +1,29 @@
+ .med-latestitems .product-details {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .med-latestitems .product-details a:after {
+    background: #ff887b;
+    content: "";
+    height: 5px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 120px;
+}
+
+.med-latestitems .productbox h1 {
+	display:block;
+	font-size:15px;
+	text-transform:uppercase;
+	margin-top:15px;
+	margin-bottom:10px;
+	font-weight:500;
+	color:#333;
+}
+
+.med-latestitems .price {
+    margin-top: 20px;
+}
