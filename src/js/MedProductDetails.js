@@ -6,6 +6,8 @@ import { getProduct, getGranulesProducts, getHoneyProducts } from "./data";
 import Header from "./Header";
 import MedMenubar from "./MedMenubar";
 import MedProductCard from "./MedProductCard";
+import MedContactInfo from "./MedContactInfo";
+import MedFooter from './MedFooter';
 import '../css/MedProductDetails.css';
 
 class MedProductDetails extends React.Component {
@@ -71,12 +73,11 @@ class MedProductDetails extends React.Component {
 
     render() {
         let { currentProduct, childProducts } = this.state;
-        console.log(currentProduct);
 
         let granules = childProducts.map((childProduct) => {
             return (<MedProductCard
                 key={childProduct.id}
-                title={childProduct.title}>
+                product={childProduct}>
             </MedProductCard>)
         });
         return (
@@ -94,6 +95,8 @@ class MedProductDetails extends React.Component {
                         {granules}
                     </div>
                 </div>
+                <MedContactInfo></MedContactInfo>
+                <MedFooter></MedFooter>
             </div>
         )
     }

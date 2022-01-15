@@ -2,6 +2,7 @@ import React from "react";
 
 import '../css/MedProductDetails.css';
 import '../css/MedProductCard.css';
+import { Link } from "react-router-dom";
 
 class MedProductCard extends React.Component {
     
@@ -17,7 +18,8 @@ class MedProductCard extends React.Component {
                             <div className="row p-2 bg-white border rounded">
                                 <div className="col-md-3 mt-1"><img className="img-fluid img-responsive rounded product-image" src="https://i.imgur.com/QpjAiHq.jpg"></img></div>
                                 <div className="col-md-6 mt-1">
-                                    <h5>{this.props.title}</h5>
+                                    <Link className="nav-link" to={"/product/" + this.props.product.id }><h5>{this.props.product.title}</h5></Link>
+                                    
                                     <div className="d-flex flex-row">
                                         <div className="ratings mr-2"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></div><span>310</span>
                                     </div>

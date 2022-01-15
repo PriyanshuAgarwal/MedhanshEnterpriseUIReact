@@ -27,7 +27,7 @@ class MedContactInfo extends React.Component {
                                     <span>Mr. Manoj Sharma ( Owner )</span>
                                 </li>
                                 <li className="contact">
-                                    Mobile: <span itemprop="telephone">08045478108</span>
+                                    Mobile: <span  itemProp="telephone">08045478108</span>
                                 </li>
                             </ul>
                         </div>
