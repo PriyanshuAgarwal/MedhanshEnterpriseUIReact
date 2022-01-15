@@ -1,8 +1,8 @@
 import React from "react";
 import Header from './Header';
-import MedMenubar from './MedMenubar';
 import '../css/MedCompanyProfile.css';
 import MedFooter from "./MedFooter";
+import MedContactInfo from "./MedContactInfo";
 
 
 class MedCompanyProfile extends React.Component {
@@ -10,7 +10,6 @@ class MedCompanyProfile extends React.Component {
         return (
             <div>
                 <Header></Header>
-                <MedMenubar></MedMenubar>
                 <div className="company-profile-img">
                     <img src="https://cpimg.tistatic.com/102742/20/template_photo_company-profile.jpg" border="0">
                     </img>
@@ -99,6 +98,7 @@ class MedCompanyProfile extends React.Component {
                     </div>
                     
                 </div>
+                <MedContactInfo></MedContactInfo>
                 <MedFooter></MedFooter>
 
             </div>

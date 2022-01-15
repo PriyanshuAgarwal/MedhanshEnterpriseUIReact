@@ -27,3 +27,7 @@
 .med-latestitems .price {
     margin-top: 20px;
 }
+
+.med-latestitems .fa-star:before {
+    color: #ff887b;
+}
