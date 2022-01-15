@@ -29,7 +29,7 @@
 .main-nav, .dropdown-menu {
 	background: #ff887b;
     border-radius: 7px;
-    margin: 15px 0 0;
+    margin: 0px;
 }
 
 .med-menubar .nav-item a{
@@ -38,4 +38,8 @@
     font-weight: normal;
 	font-weight: 400;
 	font-family: Roboto;
+}
+.med-menubar {
+	background: #f8f8f8;
+	margin-top: 10px;
 }

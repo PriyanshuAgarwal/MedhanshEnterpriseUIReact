@@ -13,7 +13,6 @@ class MedHome extends React.Component {
         return (
             <div>
                 <Header></Header>
-                <MedMenubar></MedMenubar>
                 <MedImageCarouselHome></MedImageCarouselHome>
                 <MedVision></MedVision>
                 <MedLatestItem></MedLatestItem>

@@ -1,0 +1,168 @@
+.med-indiproductinfo .product-heading h1 {
+    display: inline-block;
+    font-size: 26px;
+    color: #000;
+    line-height: normal;
+}
+
+.med-indiproductinfo .product-info-section-main {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+.med-product-description .clearfix:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.med-product-description ul li label {
+    display: inline-block;
+    width: 47%;
+    color: #777;
+    vertical-align: top;
+}
+
+.med-product-description ul li span {
+    display: inline-block;
+    color: #000;
+    width: 50%;
+}
+
+.med-product-description ul li {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0 0 20px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.med-product-description ul {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+.med-product-description h2 {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 21px;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 0 0 8px;
+    text-align: left;
+    color: #000;
+}
+
+.med-indiproductinfo .product-info-section-main .product-info-section, .med-indiproductinfo .product-sub-details {
+    margin-top: 20px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.med-indiproductinfo .main-image-section {
+    display: flex;
+    width: 48%;
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background: #fff;
+    flex-wrap: wrap;
+}
+
+.product-details {
+    display: flex;
+}
+
+.product-details-heading {
+    display: block;
+    width: 100%;
+    margin: 0 0 55px;
+    padding: 0;
+}
+.product-info-details {
+    margin-left: 50px;
+}
+
+.product-details ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.product-details ul li span:first-child {
+    width: 40%;
+    color: #666;
+}
+
+.product-details ul li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 16px;
+    color: #434343;
+    padding: 8px 2px;
+}
+
+.product-details-heading h3 {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 15px;
+    text-align: left;
+}
+
+.jssocials {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.share-your-product {
+    display: flex;
+}
+
+.jssocials-share {
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.3em 0.6em 0.3em 0;
+}
+
+.product-price-section {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.product-price {
+    display: inline-block;
+    font-size: 18px;
+    float: left;
+}
+
+.product-price span {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    color: #1b85fd;
+}
+
+.product-price span i {
+    color: #000;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+

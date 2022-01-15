@@ -1,14 +1,59 @@
-header .navbar-white {
+.med-header-container header .navbar-white {
 	background: #f8f8f8;
 	border-top: 6px solid #ff887b;
     padding: 15px 15px 0;
-	box-shadow:0px 3px 2px 0px rgba(50,50,50,0.1);
 }
-.item.header {
+
+.med-header-container {
+	background-color: #f8f8f8;
+}
+.med-header-container .item.header {
 	background-image:url(../images/carousel_1.jpg);
 	background-repeat:no-repeat;
 	background-position:0% top;
 	background-size:cover;
 	background-attachment:scroll;
 	background-color:rgba(0,0,0,0);
+}
+.med-header-container .top_trust {
+	float: right;
+    margin: 10px 10px 0;
+}
+
+.med-header-container .navbar-header {
+	width: 100%
+}
+
+.med-header-container .head_link a {
+    background: #ff887b;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 175px;
+}
+
+.med-header-container .head_link {
+    float: right;
+    font-size: 14px;
+	margin-top: 5px;
+}
+
+.med-header-container .phone {
+    background: #efefef;
+    border-radius: 6px;
+    color: #000;
+    float: right;
+    padding: 9px 0;
+    text-align: center;
+    width: 175px;
+}
+
+.med-header-container .top_right_cont {
+    border-left: 1px solid #c2c2c2;
+    float: right;
+    width: 185px;
 }
