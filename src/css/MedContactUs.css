@@ -15,6 +15,50 @@
     color: #000;
 }
 
+.med-contact-us .submit-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px !important;
+}
+
+.dd-100 {
+    width: 100%;
+}
+
+.med-contact-us  .yellow-btn {
+    border: solid 1px #f09d0d;
+    background: #ffc20e;
+    transition: all .3s ease;
+    color: #000;
+    font-weight: 700;
+}
+
+.med-contact-us .btn {
+    width: 165px!important;
+    height: 42px!important;
+    float: none!important;
+    display: inline-block;
+    font-size: 20px;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.bulk-mssg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.med-contact-us {
+    padding-bottom: 50px;
+}
+
 .med-contact-us .contact-form {
     border-top: solid 1px #ccc;
     margin-top: 20px;
@@ -40,8 +84,19 @@
 .med-contact-us .contact-form-container .contact-form dd {
     margin: 0;
     padding: 0;
-    float: left;
     width: 100%
+}
+
+.mr-2 {
+    margin-right: 2% !important;
+}
+
+.med-mobile-details {
+ width: 49%;
+}
+
+.med-contact-us .contact-form-container .med-contact-us-details {
+    display: flex;
 }
 
 .med-contact-us .contact-form-container .contact-form label span {
@@ -87,5 +142,24 @@
     text-align: left;
     display: block;
     margin: 0px;
+}
+
+.med-contact-us .contact-form-container .contact-form input[type=tel] {
+    width: 100%;
+    font-weight: 400;
+    padding: 10px;
+    height: 50px;
+    box-sizing: border-box;
+    border: solid 1px #70b6fb;
+    border-radius: 2px;
+    color: #666b71;
+    font-size: 16px;
+    background: #eaf0f6;
+    border-radius: 3px;
+    outline: none;
+}
+
+.med-contact-us .flag-dropdown {
+    width: 60px;
 }
 
