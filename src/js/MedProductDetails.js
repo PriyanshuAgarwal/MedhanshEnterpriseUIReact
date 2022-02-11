@@ -4,7 +4,6 @@ import "./data";
 import '../css/App.css';
 import { getProduct, getGranulesProducts, getHoneyProducts } from "./data";
 import Header from "./Header";
-import MedMenubar from "./MedMenubar";
 import MedProductCard from "./MedProductCard";
 import MedContactInfo from "./MedContactInfo";
 import MedFooter from './MedFooter';
@@ -83,7 +82,6 @@ class MedProductDetails extends React.Component {
         return (
             <div className="">
                 <Header></Header>
-                <MedMenubar></MedMenubar>
                 <div className="med-productdetails container">
                     <div className="prodcut-details-container">
                         <div><h4>{currentProduct && currentProduct.title ? currentProduct.title : ""}</h4></div>

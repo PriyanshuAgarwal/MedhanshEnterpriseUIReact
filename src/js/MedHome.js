@@ -1,6 +1,5 @@
 import React from "react";
 import Header from './Header';
-import MedMenubar from './MedMenubar';
 import MedImageCarouselHome from './MedImageCarouselHome';
 import MedVision from './MedVision';
 import MedLatestItem from './MedLatestItem';

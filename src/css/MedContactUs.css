@@ -1,0 +1,91 @@
+.med-contact-us .f2b {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.med-contact-us .header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.med-contact-us .contact-form-container {
+    color: #000;
+}
+
+.med-contact-us .contact-form {
+    border-top: solid 1px #ccc;
+    margin-top: 20px;
+    padding-top: 8px;
+}
+
+.med-contact-us .contact-form-container .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    height: 90px;
+    box-sizing: border-box;
+    border: solid 1px #70b6fb;
+    color: #666b71;
+    border-radius: 2px;
+    font-size: 16px;
+    background: #eaf0f6;
+    border-radius: 3px;
+    font-family: Arial,Helvetica,sans-serif;
+    outline: none;
+    font-weight: 400;
+}
+
+.med-contact-us .contact-form-container .contact-form dd {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%
+}
+
+.med-contact-us .contact-form-container .contact-form label span {
+    font-size: 22px;
+    color: red;
+}
+
+.med-contact-us .contact-form-container p {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    margin: 0;
+    text-align: left;
+    padding: 0 0 10px;
+    color: #606366;
+}
+
+.med-contact-us .contact-form-container .contact-form input[type=email] {
+    width: 100%;
+    font-weight: 400;
+    padding: 10px;
+    height: 50px;
+    box-sizing: border-box;
+    border: solid 1px #70b6fb;
+    border-radius: 2px;
+    color: #666b71;
+    font-size: 16px;
+    background: #eaf0f6;
+    border-radius: 3px;
+    outline: none;
+}
+
+.red-color {
+    color: red;
+}
+
+.med-contact-us .contact-form label {
+    font-size: 16px;
+    padding: 5px 2px;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    font-weight: 700;
+    font-family: arial;
+    text-align: left;
+    display: block;
+    margin: 0px;
+}
+

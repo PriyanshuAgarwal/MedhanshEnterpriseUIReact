@@ -5,6 +5,7 @@ import MedHome from './js/MedHome';
 import MedCompanyProfile from './js/MedCompanyProfile';
 import MedProductDetails from './js/MedProductDetails';
 import MedProductInfo from './js/MedProductInfo';
+import MedContactUs from './js/MedContactUs';
 import { createBrowserHistory } from "history";
 import {
   Router,
@@ -21,6 +22,8 @@ export default function App() {
         <Route path="/products" component={MedProductDetails} >
           </Route>   
         <Route path="/product" component={MedProductInfo}>
+          </Route>
+          <Route path="/contact-us" component={MedContactUs}>
           </Route>
     </Router>
   )

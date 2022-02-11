@@ -33,7 +33,7 @@ class MedMenubar extends React.Component {
 								</ul>
 							</li>
 
-							<li className="nav-item"> <a className="nav-link" href="#">Contact Us </a> </li>
+							<li className="nav-item"><Link className="nav-link" to="/contact-us">Contact Us</Link></li>
 						</ul>
 					</div>
 				</nav>
