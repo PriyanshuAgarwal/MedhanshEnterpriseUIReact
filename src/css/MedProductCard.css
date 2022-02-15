@@ -12,6 +12,45 @@
     text-decoration: line-through
 }
 
+.med-productcard .price {
+    color: #e62e04;
+    font-weight: 700;
+    font-size: 17px;
+}
+.med-productcard .custom-field-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+
+.med-productcard .submit-btn {
+    height: 40px;
+    background-color: #e62e04;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.med-productcard .submit-btn-container {
+    height: 100%;
+    justify-content: center;
+}
+
+
+.med-productcard .price-section {
+    display: block;
+    margin: 0 0 10px;
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 0 0 10px;
+    text-align: left;
+}
+
 .product-image {
     width: 100%
 }

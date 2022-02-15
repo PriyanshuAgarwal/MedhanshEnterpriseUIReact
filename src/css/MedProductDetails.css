@@ -6,8 +6,16 @@
 
 .med-productdetails {
     margin-top: 20px;
+    padding-bottom: 30px;
 }
 
 .med-productcards {
     margin-top: 20px;
+}
+
+.bulk-mssg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }

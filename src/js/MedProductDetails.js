@@ -2,7 +2,7 @@ import React from "react";
 
 import "./data";
 import '../css/App.css';
-import { getProduct, getGranulesProducts, getHoneyProducts } from "./data";
+import { getProduct, getGranulesProducts, getHoneyProducts, getPlasticRawScrapsProducts, getBoppTransparentTapes } from "./data";
 import Header from "./Header";
 import MedProductCard from "./MedProductCard";
 import MedContactInfo from "./MedContactInfo";
@@ -47,6 +47,10 @@ class MedProductDetails extends React.Component {
             this.fetchGranulesProducts();
         } else if (currentProduct.id == "natural-honey") {
             this.fetchHoneyProducts();
+        } else if (currentProduct.id == "industrial-plastic-raw-material") { 
+            this.fetchPlasticRawScrapsProducts();
+        } else if (currentProduct.id == "bopp-transparent-tapes") { 
+            this.fetchBoppTransparentTapesProducts();
         }
     }
 
@@ -67,6 +71,16 @@ class MedProductDetails extends React.Component {
 
     fetchHoneyProducts() {
         let granulesProducts = getHoneyProducts();
+        this.setState({ childProducts: granulesProducts });
+    }
+
+    fetchPlasticRawScrapsProducts() {
+        let granulesProducts = getPlasticRawScrapsProducts();
+        this.setState({ childProducts: granulesProducts });
+    }
+
+    fetchBoppTransparentTapesProducts() {
+        let granulesProducts = getBoppTransparentTapes();
         this.setState({ childProducts: granulesProducts });
     }
 
@@ -92,7 +106,11 @@ class MedProductDetails extends React.Component {
                     <div className="med-productcards">
                         {granules}
                     </div>
+                    <div className="bulk-mssg-container">
+                        <strong><font><font>“We are dealing in bulk order quantity”</font></font><br></br></strong>
+                    </div>
                 </div>
+                
                 <MedContactInfo></MedContactInfo>
                 <MedFooter></MedFooter>
             </div>

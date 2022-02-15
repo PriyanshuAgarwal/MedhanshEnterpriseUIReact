@@ -5,10 +5,11 @@ import '../css/MedProductCard.css';
 import { Link } from "react-router-dom";
 
 class MedProductCard extends React.Component {
-    
+
     constructor(props) {
         super(props);
     }
+
     render() {
         return (
             <div className="med-productcard">
@@ -16,23 +17,33 @@ class MedProductCard extends React.Component {
                     <div className="d-flex justify-content-center row">
                         <div className="col-md-10">
                             <div className="row p-2 bg-white border rounded">
-                                <div className="col-md-3 mt-1"><img className="img-fluid img-responsive rounded product-image" src="https://i.imgur.com/QpjAiHq.jpg"></img></div>
+                                <div className="col-md-3 mt-1"><img className="img-fluid img-responsive rounded product-image" src={this.props.product.img}></img></div>
                                 <div className="col-md-6 mt-1">
-                                    <Link className="nav-link" to={"/product/" + this.props.product.id }><h5>{this.props.product.title}</h5></Link>
-                                    
-                                    <div className="d-flex flex-row">
-                                        <div className="ratings mr-2"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></div><span>310</span>
-                                    </div>
-                                    <div className="mt-1 mb-1 spec-1"><span>100% cotton</span><span className="dot"></span><span>Light weight</span><span className="dot"></span><span>Best finish</span></div>
-                                    <div className="mt-1 mb-1 spec-1"><span>Unique design</span><span className="dot"></span><span>For men</span><span className="dot"></span><span>Casual</span></div>
+                                    <Link className="nav-link" to={"/product/" + this.props.product.id}><h5>{this.props.product.title}</h5></Link>
+                                   <div className="d-flex flex-row price-section">
+                                       <div className="price mr-2">Price: {this.props.product.price}</div>
+                                   </div>
 
+                                   <div className="custom-field-section">
+                                       <ul>
+                                            <li><strong><font><font>Delivery Time:</font></font></strong><font><font> &nbsp; <strong><strong>{this.props.product.delivery_time}</strong></strong></font></font></li>
+                                            {
+                                            this.props.product.source_capacity ? 
+                                                <li><strong><font><font>Source Capacity:</font></font></strong><font><font> &nbsp; <strong><strong>{this.props.product.source_capacity}</strong></strong></font></font></li> : ""
+                                            }
+                                            {
+                                            this.props.product.supply_ability ? 
+                                                <li><strong><font><font>Supply Ability:</font></font></strong><font><font> &nbsp; <strong><strong>{this.props.product.supply_ability}</strong></strong></font></font></li> : ""
+                                            } 
+                                            
+                                       </ul>
+                                   </div>
+                          
                                 </div>
-                                <div className="align-items-center align-content-center col-md-3 border-left mt-1">
-                                    <div className="d-flex flex-row align-items-center">
-                                        <h4 className="mr-1">$13.99</h4><span className="strike-text">$20.99</span>
+                                <div className="align-items-center align-content-center col-md-3 border-left">
+                                    <div className="d-flex flex-column submit-btn-container">
+                                        <Link to="/contact-us" className="btn btn-sm submit-btn">Submit Inquiry</Link>
                                     </div>
-                                    <h6 className="text-success">Free shipping</h6>
-                                    <div className="d-flex flex-column mt-4"><button className="btn btn-primary btn-sm" type="button">Details</button><button className="btn btn-outline-primary btn-sm mt-2" type="button">Add to wishlist</button></div>
                                 </div>
                             </div>
                         </div>
