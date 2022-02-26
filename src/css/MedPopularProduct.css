@@ -17,7 +17,13 @@
     background: #f7f7f5;
     margin: 10px 1%;
     padding: 1%;
-    width: 46%;
+    flex: 47%;
+}
+
+@media (max-width: 768px){ 
+    .med-popularProduct .matterPart {
+        flex: 87%;
+    }
 }
 
 .product-card-list {

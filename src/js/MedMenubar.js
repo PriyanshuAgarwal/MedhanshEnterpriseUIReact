@@ -44,7 +44,7 @@ class MedMenubar extends React.Component {
 			<div className="med-menubar">
 				<div className="container">
 				<nav className="navbar main-nav navbar-expand-lg">
-					<div class="navbar-brand">Menu</div>
+					<div className="navbar-brand">Menu</div>
 					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
 						<span className="navbar-toggler-icon"></span>
 					</button>
