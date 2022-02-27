@@ -61,7 +61,7 @@ class MedMenubar extends React.Component {
 									<li><a className="dropdown-item"> BOPP Tapes &raquo; </a>
 										<ul className="submenu dropdown-menu">
 											<li><Link className="dropdown-item" to="/products/bopp-tapes">Bopp tapes</Link></li>
-											<li><a className="dropdown-item" href=""> Bopp Packaging Tape</a></li>
+											<li><Link className="dropdown-item" to="/products/bopp-packing-tapes"> Bopp Packaging Tape</Link></li>
 											<li><a className="dropdown-item" href=""> Bopp Printed Tape</a></li>
 											<li><Link className="dropdown-item" to="/products/bopp-transparent-tapes"> Transparent Bopp Tapes</Link></li>
 										</ul>

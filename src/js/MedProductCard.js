@@ -35,6 +35,18 @@ class MedProductCard extends React.Component {
                                             this.props.product.supply_ability ? 
                                                 <li><strong><font><font>Supply Ability:</font></font></strong><font><font> &nbsp; <strong><strong>{this.props.product.supply_ability}</strong></strong></font></font></li> : ""
                                             } 
+                                            {
+                                            this.props.product.processing ? 
+                                                <li><strong><font><font>Processing:</font></font></strong><font><font> &nbsp; <strong><strong>{this.props.product.processing}</strong></strong></font></font></li> : ""
+                                            }
+                                            {
+                                            this.props.product.size ? 
+                                                <li><strong><font><font>Size:</font></font></strong><font><font> &nbsp; <strong><strong>{this.props.product.size}</strong></strong></font></font></li> : ""
+                                            } 
+                                            {
+                                            this.props.product.material ? 
+                                                <li><strong><font><font>Material:</font></font></strong><font><font> &nbsp; <strong><strong>{this.props.product.material}</strong></strong></font></font></li> : ""
+                                            }
                                             
                                        </ul>
                                    </div>

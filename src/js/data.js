@@ -23,6 +23,11 @@ let products = [
         id: "bopp-tapes",
         title: "BOPP Tapes",
         product_info: ""
+    },
+    {
+        id: "bopp-packing-tapes",
+        title: "Bopp Packing Tape",
+        product_info: "BOPP Packing Tapes have outstanding resistance against heat, moisture and tear. Offered smooth textured and self-adhesive tapes have amazing adhesion and outstanding bonding strength. Provided items are suited for the packing and fixing of carton boxes. Used primarily in painting, to mask off the zones that are not painted, these are suited for the packaging of cosmetics, electronics and medical goods. BOPP Packing Tapes are provided with finer cohesion strength and simple use.  These are provided in white, brown, red, green, yellow, blue and black colors. Favorites for Logistics, Freight and Courier companies, these commercial paper masking adhesive tapes can execute the bundling task very easily."
     }
 ]
 
@@ -526,6 +531,100 @@ let honeyProducts = [
 
 ]
 
+let boppPackingTapes = [
+    {
+        id: "paper-masking-tape",
+        title: "Paper Masking Tape",
+        supply_ability: "200 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated",
+        img: "/Paper-Masking-Tape.jpeg"
+    },
+    {
+        id: "paper-masking-tape-2",
+        title: "paper masking Tape",
+        supply_ability: "200 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated Material",
+        size: "all sizes are avaible",
+        img: "/Paper-Masking-Tape-2.jpeg"
+    },
+    {
+        id: "masking-tape",
+        title: "Masking tape",
+        supply_ability: "500 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated Material",
+        img: "/Masking-tape.jpeg"
+    },
+    {
+        id: "commercial-bopp-packing-tape",
+        title: "Commercial Bopp Packing Tape",
+        supply_ability: "200 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated Material",
+        img: "/Commercial-Bopp-Packing-Tape.jpeg"
+    },
+    {
+        id: "smooth-texture-bopp-packing-tapes",
+        title: "Smooth texture Bopp Packing Tapes",
+        supply_ability: "200 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated Material",
+        img: "/Smooth-texture-Bopp-Packing-Tapes.jpeg"
+    },
+    {
+        id: "self-adhesive-bopp-packing-tapes",
+        title: "Self Adhesive Bopp Packing Tapes",
+        supply_ability: "200 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated Material",
+        img: "/Self-Adhesive-Bopp-Packing-Tapes.jpeg"
+    },
+    {
+        id: "high-quality-bopp-packing-tapes",
+        title: "High quality Bopp Packing Tapes",
+        supply_ability: "200 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated Material",
+        img: "/High-quality-Bopp-Packing-Tapes.jpeg"
+    },
+    {
+        id: "adhesive-bopp-packing-tapes",
+        title: "Adhesive bopp Packing Tape",
+        supply_ability: "200 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated Material",
+        img: "/Adhesive-bopp-Packing-Tape.jpeg"
+    },
+    {
+        id: "white-brown-bopp-tapes",
+        title: "White Brown Bopp Tape",
+        supply_ability: "200 Per Week",
+        price: "1700 INR/Box",
+        delivery_time: "10 Days",
+        processing: "Multiple Extrusion",
+        material: "Laminated Material",
+        img: "/White-Brown-Bopp-Tape.jpeg"
+    },
+]
+
 export function getProduct() {
     return products;
 }
@@ -548,4 +647,8 @@ export function getBoppTransparentTapes() {
 
 export function getBoppTapesProducts() {
     return boppTapes;
+}
+
+export function getBoppPackingTapesProducts() {
+    return boppPackingTapes;
 }

@@ -3,7 +3,8 @@ import React from "react";
 import "./data";
 import '../css/App.css';
 import { getProduct, getGranulesProducts, getHoneyProducts, 
-    getPlasticRawScrapsProducts, getBoppTransparentTapes, getBoppTapesProducts } from "./data";
+    getPlasticRawScrapsProducts, getBoppTransparentTapes, getBoppTapesProducts,
+    getBoppPackingTapesProducts } from "./data";
 import Header from "./Header";
 import MedProductCard from "./MedProductCard";
 import MedProductTapeCard from "./MedProductTapeCard";
@@ -28,6 +29,7 @@ class MedProductDetails extends React.Component {
         this.setCurrentProduct = this.setCurrentProduct.bind(this);
         this.fetchHoneyProducts = this.fetchHoneyProducts.bind(this);
         this.fetchBoppTapesProducts = this.fetchBoppTapesProducts.bind(this);
+        this.fetchBoppPackingTapesProducts = this.fetchBoppPackingTapesProducts.bind(this);
     }
 
     componentDidMount() {
@@ -55,8 +57,10 @@ class MedProductDetails extends React.Component {
             this.fetchPlasticRawScrapsProducts();
         } else if (currentProduct.id == "bopp-transparent-tapes") { 
             this.fetchBoppTransparentTapesProducts();
-        } else if (currentProduct.id == "bopp-tapes") { 
+        } else if (currentProduct.id == "bopp-tapes") {
             this.fetchBoppTapesProducts();
+        } else if (currentProduct.id == "bopp-packing-tapes") {  
+            this.fetchBoppPackingTapesProducts();
         }
     }
 
@@ -76,6 +80,12 @@ class MedProductDetails extends React.Component {
         let granulesProducts = getBoppTapesProducts();
         this.setState({ childProducts: granulesProducts });
         this.setState({ showCard: false })
+    }
+
+    fetchBoppPackingTapesProducts() {
+        let granulesProducts = getBoppPackingTapesProducts();
+        this.setState({ childProducts: granulesProducts });
+        this.setState({ showCard: true })
     }
 
     fetchGranulesProducts() {
