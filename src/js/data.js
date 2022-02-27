@@ -28,7 +28,40 @@ let products = [
         id: "bopp-packing-tapes",
         title: "Bopp Packing Tape",
         product_info: "BOPP Packing Tapes have outstanding resistance against heat, moisture and tear. Offered smooth textured and self-adhesive tapes have amazing adhesion and outstanding bonding strength. Provided items are suited for the packing and fixing of carton boxes. Used primarily in painting, to mask off the zones that are not painted, these are suited for the packaging of cosmetics, electronics and medical goods. BOPP Packing Tapes are provided with finer cohesion strength and simple use.  These are provided in white, brown, red, green, yellow, blue and black colors. Favorites for Logistics, Freight and Courier companies, these commercial paper masking adhesive tapes can execute the bundling task very easily."
+    },
+    {
+        
+        id: "bopp-printed-tapes",
+        title: "Bopp Printed Tape",
+        product_info: "The packaging with Printed Tapes can replace overpriced printed packets. Also, these can decrease the chances of pilfering and fiddling. These show your promotional note, companys logo and handling instructions. Having availability in various colors, these are applicable for trademark printing, marketing and advertising. Suited for the industries of electrical, food processing, glass and pharmaceutical, these give great strength in a little span of time. Printed Tapes have good weather and electrical resistance. Spotlighting the companys logo, these Printed Tapes provide advanced adhesion strength and have usages in laminating, tabbing, bundling, reinforcing, and label protection."
     }
+]
+
+let boppPrintedTapes = [
+    {
+        id: "bopp-printed-self-adhesive-Tape",
+        title: "Bopp Printed Self Adhesive Tape",
+        supply_ability: "200 Per Week",
+        price: "1800 INR/Box",
+        delivery_time: "10 Days",
+        img: "/Bopp-Printed-Self-Adhesive-Tape.jpeg"
+    },
+    {
+        id: "industrial-bopp-printed-adhesive-Tape",
+        title: "Industrial BOPP Printed Adhesive Tape",
+        supply_ability: "200 Per Week",
+        price: "1800 INR/Box",
+        delivery_time: "10 Days",
+        img: "/Industrial-BOPP-Printed-Adhesive-Tape.jpeg"
+    },
+    {
+        id: "adhesive-printed-bopp-tape",
+        title: "Adhesive Printed BOPP Tape",
+        supply_ability: "200 Per Week",
+        price: "1800 INR/Box",
+        delivery_time: "10 Days",
+        img: "/Adhesive-Printed-BOPP-Tape.jpeg"
+    },
 ]
 
 let boppTransparentTapes = [
@@ -651,4 +684,8 @@ export function getBoppTapesProducts() {
 
 export function getBoppPackingTapesProducts() {
     return boppPackingTapes;
+}
+
+export function getBoppPrintedTapes() {
+    return boppPrintedTapes;
 }
