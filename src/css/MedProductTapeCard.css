@@ -1,0 +1,71 @@
+.med-producttapecard-container {
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(50 50 50 / 23%);
+    margin: 0px 0px 20px 0px;
+    overflow: hidden;
+    padding: 10px 6px 10px 6px;
+    width: 98%;
+}
+
+.med-producttapecard-container .prod_cat_name {
+    background-color: #fff;
+    border-bottom: 1px solid #ff887b;
+    color: #ff887b;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0px;
+    padding: 6px 0px 6px 6px;
+    text-align: left;
+}
+
+.med-producttapecard-container .prod_cat_descr {
+    color: #161614 !important;
+    margin: 0px;
+    padding: 6px 10px 6px 0px;
+    text-align: justify;
+}
+
+.med-producttapecard-container .pro_link_cont {
+    border-bottom: 1px dotted #dadada;
+    float: none;
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.med-producttapecard-container .pro_link_cont ul {
+    float: left;
+    line-height: 18px;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 15px 0px 10px 0px;
+    text-align: left;
+    width: 235px;
+}
+
+.med-producttapecard-container .pro_link_cont li {
+    color: #000000;
+    font-weight: 500;
+    list-style-image: url(https://tiimg.tistatic.com/catalogs/template100001/cate-icon.png);
+    list-style-type: none;
+    margin: 0px 0px 0px 17px;
+    padding: 0px;
+    text-align: left;
+}
+
+.med-producttapecard-container .pro_link_cont li a {
+    color: #000000;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+}
+
+.med-producttapecard-container  .pro_link_cont li a:hover {
+    color: #ff887b;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    text-decoration: underline;
+}

@@ -2,9 +2,11 @@ import React from "react";
 
 import "./data";
 import '../css/App.css';
-import { getProduct, getGranulesProducts, getHoneyProducts, getPlasticRawScrapsProducts, getBoppTransparentTapes } from "./data";
+import { getProduct, getGranulesProducts, getHoneyProducts, 
+    getPlasticRawScrapsProducts, getBoppTransparentTapes, getBoppTapesProducts } from "./data";
 import Header from "./Header";
 import MedProductCard from "./MedProductCard";
+import MedProductTapeCard from "./MedProductTapeCard";
 import MedContactInfo from "./MedContactInfo";
 import MedFooter from './MedFooter';
 import '../css/MedProductDetails.css';
@@ -17,13 +19,15 @@ class MedProductDetails extends React.Component {
             products: [],
             productId: "",
             currentProduct: {},
-            childProducts: []
+            childProducts: [], 
+            showCard: true
         }
 
         this.fetchGranulesProducts = this.fetchGranulesProducts.bind(this);
         this.setChildProducts = this.setChildProducts.bind(this);
         this.setCurrentProduct = this.setCurrentProduct.bind(this);
         this.fetchHoneyProducts = this.fetchHoneyProducts.bind(this);
+        this.fetchBoppTapesProducts = this.fetchBoppTapesProducts.bind(this);
     }
 
     componentDidMount() {
@@ -51,8 +55,12 @@ class MedProductDetails extends React.Component {
             this.fetchPlasticRawScrapsProducts();
         } else if (currentProduct.id == "bopp-transparent-tapes") { 
             this.fetchBoppTransparentTapesProducts();
+        } else if (currentProduct.id == "bopp-tapes") { 
+            this.fetchBoppTapesProducts();
         }
     }
+
+    
 
 
     componentWillReceiveProps(nextProps) {
@@ -64,34 +72,51 @@ class MedProductDetails extends React.Component {
 
     }
 
+    fetchBoppTapesProducts() {
+        let granulesProducts = getBoppTapesProducts();
+        this.setState({ childProducts: granulesProducts });
+        this.setState({ showCard: false })
+    }
+
     fetchGranulesProducts() {
         let granulesProducts = getGranulesProducts();
         this.setState({ childProducts: granulesProducts });
+        this.setState({ showCard: true })
     }
 
     fetchHoneyProducts() {
         let granulesProducts = getHoneyProducts();
         this.setState({ childProducts: granulesProducts });
+        this.setState({ showCard: true })
     }
 
     fetchPlasticRawScrapsProducts() {
         let granulesProducts = getPlasticRawScrapsProducts();
         this.setState({ childProducts: granulesProducts });
+        this.setState({ showCard: true })
     }
 
     fetchBoppTransparentTapesProducts() {
         let granulesProducts = getBoppTransparentTapes();
         this.setState({ childProducts: granulesProducts });
+        this.setState({ showCard: true })
+        
     }
 
     render() {
         let { currentProduct, childProducts } = this.state;
-
         let granules = childProducts.map((childProduct) => {
             return (<MedProductCard
                 key={childProduct.id}
                 product={childProduct}>
             </MedProductCard>)
+        });
+
+        let tapes = childProducts.map((childProduct) => {
+            return (<MedProductTapeCard
+                key={childProduct.id}
+                product={childProduct}>
+            </MedProductTapeCard>)
         });
         return (
             <div className="">
@@ -104,7 +129,7 @@ class MedProductDetails extends React.Component {
                         </div>
                     </div>
                     <div className="med-productcards">
-                        {granules}
+                        {this.state.showCard ? granules : tapes}
                     </div>
                     <div className="bulk-mssg-container">
                         <strong><font><font>“We are dealing in bulk order quantity”</font></font><br></br></strong>

@@ -18,6 +18,11 @@ let products = [
         id: "bopp-transparent-tapes",
         title: "Bopp Transparent Tapes",
         product_info: "BOPP Transparent Tapes are the transparent tapes, suited for industrial applications. These are offered with Biaxially Oriented Polypropylene (BOPP) films coated with water based glue. The adhesion strength of these tapes makes them pilfer proof and ideal for light weight packaging, splicing, laminating, bundling and label protection. These ensure comprehensive protection of packed goods during their handling and transportation. BOPP Transparent Tapes make noise reduction over general packing tape and thus can be used in warehouses and busy offices to avoid sound disturbances. Accessible with brown color as well as transparency in appearance, these have heat stable film."
+    },
+    {
+        id: "bopp-tapes",
+        title: "BOPP Tapes",
+        product_info: ""
     }
 ]
 
@@ -54,6 +59,197 @@ let boppTransparentTapes = [
         delivery_time: "10 Days",
         img: "/Transparent-BOPP-Adhesive-Tape.jpeg"
     }
+]
+
+let boppTapes = [
+    {
+        id: "bopp-tapes",
+        title: "Bopp Tapes",
+        info: "BOPP Tapes are the thermoplastic tapes, which work well in extreme temperatures. These adhesive are provided in red, blue, white, green and yellow colors. These are capable to seal quickly, with reliability and consistency. Offered with UV, heat, moisture and shear resistance, these packing tapes are applicable for medium to heavy-duty carton sealing and shipping. Also, these have usages in inventory management as well as in logistic industry. BOPP Tapes are shrinkage and wrinkle proof adhesive solutions. Capable to be stretched in all directions, these boast of high tensile strength and are appropriate to use for labeling and packaging.",
+        subproducts: [
+            [
+                {
+                title: "Colored Bopp Tapes",
+                id: "",
+                url: ""
+                },
+                {
+                    title: "Edge Banding Tape",
+                    id: ""
+                },
+                {
+                    title: "Strong Adhesive BOPP Packing Tapes",
+                    id: ""
+                }
+            ],
+            [
+                {
+                    title: "Double Sided Clothe Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Duct Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Paper Carft Tape",
+                    id: "",
+                    url: "" 
+                }
+            ],
+            [
+                {
+                    title: "Double Sided Foam Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Bag Sealing Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Tissue Tape",
+                    id: "",
+                    url: "" 
+                }
+            ],
+            [
+                {
+                    title: "Pvc Insulation Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Brown Bopp Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Bopp Jumbo Roll Tape",
+                    id: "",
+                    url: "" 
+                }
+            ]
+            
+        ]
+    },
+    {
+        id: "bopp-packing-tape",
+        title: "Bopp Packing Tape",
+        info: "BOPP Packing Tapes have outstanding resistance against heat, moisture and tear. Offered smooth textured and self-adhesive tapes have amazing adhesion and outstanding bonding strength. Provided items are suited for the packing and fixing of carton boxes. Used primarily in painting, to mask off the zones that are not painted, these are suited for the packaging of cosmetics, electronics and medical goods. BOPP Packing Tapes are provided with finer cohesion strength and simple use.  These are provided in white, brown, red, green, yellow, blue and black colors. Favorites for Logistics, Freight and Courier companies, these commercial paper masking adhesive tapes can execute the bundling task very easily.",
+        subproducts: [
+            [
+                {
+                    title: "Smooth texture Bopp Packing Tapes",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Masking tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Commercial Bopp Packing Tape",
+                    id: "",
+                    url: "" 
+                },
+            ],
+            [
+                {
+                    title: "White Brown Bopp Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Self Adhesive Bopp Packing Tapes",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "High quality Bopp Packing Tapes",
+                    id: "",
+                    url: "" 
+                },
+            ],
+            [
+                {
+                    title: "White Brown Bopp Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Self Adhesive Bopp Packing Tapes",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "High quality Bopp Packing Tapes",
+                    id: "",
+                    url: "" 
+                },
+            ]
+        ]
+    },
+    {
+        id: "bopp-printed-tape",
+        title: "Bopp Printed Tape",
+        info: "The packaging with Printed Tapes can replace overpriced printed packets. Also, these can decrease the chances of pilfering and fiddling. These show your promotional note, companys logo and handling instructions. Having availability in various colors, these are applicable for trademark printing, marketing and advertising. Suited for the industries of electrical, food processing, glass and pharmaceutical, these give great strength in a little span of time. Printed Tapes have good weather and electrical resistance. Spotlighting the companys logo, these Printed Tapes provide advanced adhesion strength and have usages in laminating, tabbing, bundling, reinforcing, and label protection.",
+        subproducts: [
+            [
+                {
+                    title: "Adhesive Printed BOPP Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Industrial BOPP Printed Adhesive Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Bopp Printed Self Adhesive Tape",
+                    id: "",
+                    url: "" 
+                },
+            ]
+        ]
+    },
+    {
+        id: "bopp-transparent-tape",
+        title: "Bopp Transparent Tapes",
+        info: "BOPP Transparent Tapes are the transparent tapes, suited for industrial applications. These are offered with Biaxially Oriented Polypropylene (BOPP) films coated with water based glue. The adhesion strength of these tapes makes them pilfer proof and ideal for light weight packaging, splicing, laminating, bundling and label protection. These ensure comprehensive protection of packed goods during their handling and transportation. BOPP Transparent Tapes make noise reduction over general packing tape and thus can be used in warehouses and busy offices to avoid sound disturbances. Accessible with brown color as well as transparency in appearance, these have heat stable film.",
+        subproducts: [
+            [
+                {
+                    title: "Transparent BOPP Adhesive Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Industrial Bopp Transparent Tape",
+                    id: "",
+                    url: "" 
+                },
+                {
+                    title: "Adhesive Bopp Transparent Tape",
+                    id: "",
+                    url: "" 
+                },
+            ],
+            [
+                {
+                    title: "BOPP Transparent Packing Adhesive Tape",
+                    id: "",
+                    url: "" 
+                }
+                
+            ]
+        ]
+    },
 ]
 
 let plasticRawScrapsProducts = [
@@ -348,4 +544,8 @@ export function getPlasticRawScrapsProducts() {
 
 export function getBoppTransparentTapes() {
     return boppTransparentTapes;
+}
+
+export function getBoppTapesProducts() {
+    return boppTapes;
 }
