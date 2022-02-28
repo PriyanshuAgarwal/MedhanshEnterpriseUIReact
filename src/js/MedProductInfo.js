@@ -1,27 +1,52 @@
 import React from "react";
 
 import Header from "./Header";
-import MedMenubar from "./MedMenubar";
-import MedProductCard from "./MedProductCard";
+import { allProducts } from "./data";
 import MedContactInfo from "./MedContactInfo";
 import MedFooter from './MedFooter';
 import '../css/MedProductInfo.css';
 
 class MedProductInfo extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            productId: "",
+            currentProduct: {}
+        }
+
+        this.setCurrentProduct = this.setCurrentProduct.bind(this);
+    }
+
+    componentDidMount() {
+        let pathName = window.location.pathname;
+        let productId = pathName.split("/")[2];
+        this.setCurrentProduct(productId);
+    }
+
+    setCurrentProduct(productId) {
+       let products = allProducts();
+       let currentProductabc = products.find((product) => {
+            return product.id == productId;
+        })
+        this.setState({ currentProduct: currentProductabc });
+    }
+
     render() {
+        let {currentProduct} = this.state;
+        let prices = currentProduct.price ? currentProduct.price.split("/"): [];
         return (
             <div>
                 <Header></Header>
-                <MedMenubar></MedMenubar>
                 <div className="container med-indiproductinfo">
                     <div className="product-info-section-main">
                         <div className="product-info-section clearfix">
                             <div className="product-heading">
-                                <h1>dark black honey</h1>
+                                <h1>{currentProduct.title}</h1>
                             </div>
                             <div className="product-details">
                                 <div className="main-image-section">
-                                    <img src="https://cpimg.tistatic.com/06938220/b/4/Dark-Black-Honey.jpg" alt="dark black honey" border="0"></img>
+                                    <img src={currentProduct.img} alt="dark black honey" border="0"></img>
                                 </div>
                                 <div className="product-info-details">
                                     <div className="product-details-heading">
@@ -31,7 +56,7 @@ class MedProductInfo extends React.Component {
                                         <ul>
                                             <li>
                                                 <span>Source Capacity:</span>
-                                                <span style={{"marginLeft": "60px"}}>10 kilograms per day</span>
+                                                <span style={{"marginLeft": "60px"}}>{currentProduct.source_capacity}</span>
                                             </li>
 
                                             <li>
@@ -44,7 +69,7 @@ class MedProductInfo extends React.Component {
                                     </div>
                                     <div className="product-price-section">
                                         <div className="product-price">
-                                            <span>350 INR <i>/Kilograms</i></span>
+                                            <span>{prices[0]}<i>/{prices[1]}</i></span>
 
                                         </div>
                                         <div className="get-price-btn">
@@ -65,15 +90,20 @@ class MedProductInfo extends React.Component {
                                 <font>Price & Qunatity</font>
                             </h2>
                             <ul className="clearfix">
-                                <li>
+                               {currentProduct.price ?  <li>
                                     <label>Price</label>
-                                    <span>350 INR/Kilograms</span>
-                                </li>
-
+                                    <span>{currentProduct.price}</span>
+                                </li> : ""} 
+                                { currentProduct.price_range ?
+                                    <li>
+                                    <label>Price Range</label>
+                                    <span>{currentProduct.price_range}</span>
+                                </li> : "" }
+                                {currentProduct.min_order_quantity ? 
                                 <li>
                                     <label>Minimum order quantity</label>
-                                    <span>10 kilograms</span>
-                                </li>
+                                    <span>{currentProduct.min_order_quantity}</span>
+                                </li> : "" }
                             </ul>
                         </div>
                         <div className="med-product-description">
@@ -81,15 +111,15 @@ class MedProductInfo extends React.Component {
                                 <font>Commercial information</font>
                             </h2>
                             <ul className="clearfix">
-                                <li>
+                            {currentProduct.source_capacity ?  <li>
                                     <label>Source capacity</label>
-                                    <span>10 kilograms per day</span>
-                                </li>
+                                    <span>{currentProduct.source_capacity}</span>
+                                </li> : "" }
 
-                                <li>
+                                {currentProduct.delivery_time?  <li>
                                     <label>Delivery Time</label>
-                                    <span>1 week</span>
-                                </li>
+                                    <span>{currentProduct.delivery_time}</span>
+                                </li> : ""}
                             </ul>
                         </div>
 
@@ -97,7 +127,7 @@ class MedProductInfo extends React.Component {
                             <h2>
                                 <font>Product description</font>
                             </h2>
-                            <p style={{"textAlign": "justify", "marginBottom": "0.35cm", "color": "#000"}}>Dark black honey has a different taste to ordinary honey. Some people think that all honey is in the same but the facts are not like that. The honey described above is honey made by bees. It should not be confused with another product on the market called black honey, which is not made by bees. Color is one of the ways natural honey is graded. Dark black honey is made for use in various cuisines and dishes. </p>
+                            <p style={{"textAlign": "justify", "marginBottom": "0.35cm", "color": "#000"}}>{currentProduct.product_description} </p>
                         </div>
                     </div>
                 </div>
