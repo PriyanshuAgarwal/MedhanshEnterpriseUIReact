@@ -68,34 +68,46 @@ let boppTransparentTapes = [
     {
         id: "bopp-transparent-packing-adhesive-tape",
         title: "BOPP Transparent Packing Adhesive Tape",
-        supply_ability: "200 Per Week",
+        supply_ability: "200 Box Per Week",
         price: "1540 INR/Box",
+        price_range: "1540.00 - 6500.00 INR/Box",
+        min_order_quantity: "200 Box",
         delivery_time: "10 Days",
+        product_description: "We take pleasure in introducing ourselves as one of the leading organizations offering BOPP Transparent Packing Adhesive Tape. The offered tape is highly efficient for packaging various kinds of goods in corrugated boxes. BOPP Transparent Packing Adhesive Tape is used to seal boxes and shipments and is known for their light weight and unrivaled bond strength. The offered tape is also used in EMI and RFI shielding, ducting and thermal spray masking. This tape is avail from us in various specifications at most affordable rates.",
         img: "/BOPP-Transparent-Packing-Adhesive-Tape.jpeg"
     },
     {
         id: "adhesive-bopp-transparent-tape",
         title: "Adhesive Bopp Transparent Tape",
-        supply_ability: "200 Per Week",
+        supply_ability: "200 Box Per Week",
         price: "1540 INR/Box",
+        min_order_quantity: "200 Box",
         delivery_time: "10 Days",
+        price_range: "1540.00 - 6500.00 INR/Box",
+        product_description: "We have been involved in offering a wide range of Adhesive Bopp Transparent Tape which is made using high-grade BOPP material procured from reliable market vendors. This tape is widely demanded for packaging various goods in corrugates boxes. It is highly appreciated in market due to its high tear strength, excellent adhesive strength and smooth finish. Provided tape is also utilized in medium to heavy-duty carton sealing and is demanded in shipping and inventory management industry. Before final dispatch, it is checked on different standard parameters by our experts in order to deliver defect free range. Adhesive Bopp Transparent Tape has high-quality glue which makes it ideal to stick to most surfaces quickly and firmly.",
         img: "/Adhesive-Bopp-Transparent-Tape.jpeg"
     },
     {
         id: "industrial-bopp-transparent-tape",
         title: "Industrial Bopp Transparent Tape",
-        supply_ability: "200 Per Week",
+        supply_ability: "200 Box Per Week",
         price: "1600 INR/Box",
         delivery_time: "10 Days",
+        min_order_quantity: "50 Box",
+        price_range: "1600.00 - 6200.00 INR/Box",
+        product_description: "We are one of the prominent firms, involved in supplying Industrial Bopp Transparent Tape. This tape is widely used for sealing medium to heavy-duty carton. Prior to final dispatch, it is checked on different standard parameters by our experts in order to ensure its high adhesive strength. This tape is made under the supervision of experts using high grade biaxially oriented polypropylene material which is procured from reliable market vendors. It is transparent in nature and provides proper as well as secure sealing. We also provide this tape in different packaging options to meet clients' demand. Industrial Bopp Transparent Tape has a sharp serrated cut and can be easily cut.",
         img: "/Industrial-Bopp-Transparent-Tape.jpeg"
     },
     {
         id: "transparent-bopp-adhesive-tape",
         title: "Transparent BOPP Adhesive Tape",
-        supply_ability: "200 Per Week",
+        supply_ability: "200 Box Per Week",
         price: "1540 INR/Box",
+        min_order_quantity: "200 Box",
         delivery_time: "10 Days",
-        img: "/Transparent-BOPP-Adhesive-Tape.jpeg"
+        price_range: "1540.00 - 6200.00 INR/Box",
+        img: "/Transparent-BOPP-Adhesive-Tape.jpeg",
+        product_description: "We are one of the leading suppliers of Transparent BOPP Adhesive Tape which is made under the supervision of experts in sync with set industry norms. It is perfect for goods packaging purpose and is demanded in different industries. Due to its high tear strength and excellent adhesiveness, it ensures complete protection of packed goods during transit as well as handling. Before final dispatch, it is checked on different standard parameters by our experts in order to deliver defect free range. It is also available in different lengths and thickness to meet varied demand of clients'. Offered Transparent BOPP Adhesive Tape is highly resistant to high temperature."
     }
 ]
 
@@ -294,65 +306,90 @@ let plasticRawScrapsProducts = [
     {
         id: "colour-pp-article-grinding-scrap",
         title: "Colour PP Article Grinding Scrap",
-        supply_ability: "30-50 Per Month",
+        supply_ability: "30-50  Ton Per Month",
+        source_capacity: "30-50 Ton Per Month",
         price: "40.00 - 50.00 INR/Ton",
         delivery_time: "3 days",
-        img: "/Colour-PP-Article-Grinding-Scrap.jpeg"
+        min_order_quantity: "5 Ton",
+        product_description: "We are offering here the Colour PP Article Grinding Scrap for use in the various purposes like different kinds of Articles, Household Products etc. The Grinding uses xed abrasivesthe abrasive particles are bonded to the paper or platenfor fast stock removal. Polishing uses free abrasives on a cloth; that is, the abrasive particles are suspended in a lubricant and can roll or slide across the cloth and specimen. The offered Colour PP Article Grinding Scrap is very useful and effective. ",
+        img: "/Colour-PP-Article-Grinding-Scrap.jpeg",
+
     },
     {
         id: "bopp-printed-roll-waste",
         title: "BOPP Printed Roll Waste",
-        supply_ability: "30-50 Per Month",
+        supply_ability: "30-50 Ton Per Month",
         price: "45.00 - 50.00 INR/Ton",
         delivery_time: "3 days",
-        img: "/BOPP-Printed-Roll-Waste.jpeg"
+        source_capacity: "30-50 Ton Per Month",
+        min_order_quantity: "5 Ton",
+        img: "/BOPP-Printed-Roll-Waste.jpeg",
+        product_description: " The BOPP Printed Roll Waste is offered by us that is a widely used rugged thermoplastic polymer. When polypropylene film is biaxially oriented, BOPP, it becomes crystal clear but remains available in white and matte finishes. The polypropylene film substrate reasonable economics, conformability and fatigue resistance make it ideal for packaging, labeling and graphic applications. BOPP stands for Biaxially Oriented Polypropylene (aka plastic). BOPP Printed Roll Waste is made for use in the various industries as per the need. "
     },
     {
         id: "raffia-grinding-scrap",
         title: "Raffia Grinding Scrap",
-        supply_ability: "30-50 Per Month",
+        supply_ability: "30-50 Ton Per Month",
         price: "33.00 - 35.00 INR/Ton",
         delivery_time: "3 days",
+        source_capacity: "30-50 Ton Per Month",
+        min_order_quantity: "5 Ton",
+        product_description: "The Raffia Grinding Scrap is offered by us that is made for commercial uses. The Raffia is harvested from a raffia palm tree and can often be confused with straw. Crafters like to use raffia, a soft and durable natural fiber, to make things like hats. A large palm tree grows leaves that can be stripped and dried to create raffia strands. Like jute or  twine, this is a natural fiber that can be woven like straw. The Raffia Grinding Scrap is highly used.",
         img: "/Raffia-Grinding-Scrap.jpeg"
     },
     {
         id: "ldpe-film-roll-scrap",
         title: "LDPE Film Roll Scrap",
-        supply_ability: "30-50 Per Month",
+        supply_ability: "30-50 Ton Per Month",
         price: "55.00 - 60.00 INR/Ton",
         delivery_time: "3 days",
+        source_capacity: "30-50 Ton Per Month",
+        min_order_quantity: "5 Ton",
+        product_description: "",
         img: "/LDPE-Film-Roll-Scrap.jpeg"
     },
     {
         id: "pp-article-grinding-scrap",
         title: "PP Article Grinding Scrap",
-        supply_ability: "30-50 Per Month",
+        supply_ability: "30-50 Ton Per Month",
         price: "40.00 - 50.00 INR/Ton",
         delivery_time: "3 days",
+        source_capacity: "30-50 Ton Per Month",
+        min_order_quantity: "5 Ton",
+        product_description: "",
         img: "/PP-Article-Grinding-Scrap.jpeg"
     },
     {
         id: "jumbo-bag-scrap",
         title: "Jumbo Bag Scrap",
-        supply_ability: "30-50 Per Month",
+        supply_ability: "30-50 Ton Per Month",
         price: "31.00 - 34.00 INR/Ton",
         delivery_time: "3 days",
+        min_order_quantity: "5 Ton",
+        source_capacity: "30-50 Ton Per Month",
+        product_description: "",
         img: "/Jumbo-Bag-Scrap.jpeg"
     },
     {
         id: "jumbo-bag-grinding-scrap",
         title: "Jumbo Bag Grinding Scrap",
-        supply_ability: "30-50 Per Month",
+        supply_ability: "30-50 Ton Per Month",
         price: "43.00 - 45.00 INR/Ton",
         delivery_time: "3 days",
+        min_order_quantity: "5 Ton",
+        source_capacity: "30-50 Ton Per Month",
+        product_description: "",
         img: "/Jumbo-Bag-Grinding-Scrap.jpeg"
     },
     {
         id: "hdpe-grinding-scrap",
         title: "HDPE Grinding Scrap",
-        supply_ability: "30-50 Per Month",
+        supply_ability: "30-50 Ton Per Month",
         price: "62.00 - 68.00 INR/Ton",
         delivery_time: "3 days",
+        min_order_quantity: "5 Ton",
+        source_capacity: "30-50 Ton Per Month",
+        product_description: "",
         img: "/HDPE-Grinding-Scrap.jpeg"
     }
 ]
@@ -765,5 +802,5 @@ export function getBoppPrintedTapes() {
 }
 
 export function allProducts() {
-    return [].concat.apply([], [boppPrintedTapes, boppTapes, plasticRawScrapsProducts, plasticGranulesProducts, honeyProducts, boppPackingTapes ])
+    return [].concat.apply([], [boppPrintedTapes, boppTapes, plasticRawScrapsProducts, plasticGranulesProducts, honeyProducts, boppPackingTapes, boppTransparentTapes ])
 }

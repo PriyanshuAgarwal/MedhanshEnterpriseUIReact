@@ -34,7 +34,7 @@ class MedProductInfo extends React.Component {
 
     render() {
         let {currentProduct} = this.state;
-        let prices = currentProduct.price ? currentProduct.price.split("/"): [];
+        let prices =  (currentProduct && currentProduct.price) ? currentProduct.price.split("/"): [];
         return (
             <div>
                 <Header></Header>
@@ -54,10 +54,18 @@ class MedProductInfo extends React.Component {
                                      </div>   
                                      <div className="">
                                         <ul>
-                                            <li>
-                                                <span>Source Capacity:</span>
-                                                <span style={{"marginLeft": "60px"}}>{currentProduct.source_capacity}</span>
-                                            </li>
+                                            {
+                                                currentProduct.source_capacity ? 
+                                                <li>
+                                                    <span>Source Capacity:</span>
+                                                    <span style={{"marginLeft": "60px"}}>{currentProduct.source_capacity}</span>
+                                                </li> : 
+                                                <li>
+                                                <span>Supply Ability:</span>
+                                                <span style={{"marginLeft": "60px"}}>{currentProduct.supply_ability}</span>
+                                            </li> 
+                                            }
+                                            
 
                                             <li>
                                                 <div className="share-your-product">
@@ -114,6 +122,10 @@ class MedProductInfo extends React.Component {
                             {currentProduct.source_capacity ?  <li>
                                     <label>Source capacity</label>
                                     <span>{currentProduct.source_capacity}</span>
+                                </li> : "" }
+                                {currentProduct.supply_ability ?  <li>
+                                    <label>Supply Ability</label>
+                                    <span>{currentProduct.supply_ability}</span>
                                 </li> : "" }
 
                                 {currentProduct.delivery_time?  <li>
