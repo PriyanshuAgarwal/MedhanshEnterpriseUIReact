@@ -17,7 +17,7 @@ class MedContactInfo extends React.Component {
                                         Address: House No./3, Prem Nagar, Near By Post-office, Bareilly - 243005, Uttar Pradesh, India
                                     </li>
                                     <li className="contact">
-                                        Phone: <span>08045478108</span>
+                                        Phone: <span>8630302269</span>
                                     </li>
                                 </ul>
                                 <div className="clear"></div>
@@ -28,7 +28,7 @@ class MedContactInfo extends React.Component {
                                         <span>Mr. Manoj Sharma ( Owner )</span>
                                     </li>
                                     <li className="contact">
-                                        Mobile: <span itemProp="telephone">08045478108</span>
+                                        Mobile: <span itemProp="telephone">8630302269</span>
                                     </li>
                                 </ul>
                             </div>
