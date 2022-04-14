@@ -6,12 +6,37 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css';
 import MedFooter from './MedFooter';
 import MedContactInfo from './MedContactInfo';
+import emailjs from '@emailjs/browser';
 
 
 
 
 class MedContactUs extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            message: "",
+            email: "",
+            phone: ""
+        }
+
+        this.sendEmail = this.sendEmail.bind(this);
+
+
+    }
+
+    sendEmail(e)  {
+        console.log(e);
+        e.preventDefault();
+    
+       /* emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });*/
+      };
 
     render() {
         return (
@@ -22,7 +47,8 @@ class MedContactUs extends React.Component {
                     <div className="header">
                         <span className="f2b" style={{marginBottom: "90px !important"}}><font><font >MEDHANSH COMPANIES</font></font></span>
                     </div>
-                    <div className="contact-form-container">
+                    <form>
+                        <div className="contact-form-container">
                         <div className="contact-form">
                             <dd className="wd-100">
                                 <label>
@@ -64,7 +90,8 @@ class MedContactUs extends React.Component {
                             <div className="bulk-mssg-container">
                                 <strong><font><font>“We are dealing in bulk order quantity”</font></font><br></br></strong></div>
                         </div>
-                    </div>
+                        </div>
+                    </form>
                 </div>
                 <MedContactInfo></MedContactInfo>
                 <MedFooter></MedFooter>
