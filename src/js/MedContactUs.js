@@ -22,8 +22,13 @@ class MedContactUs extends React.Component {
         }
 
         this.sendEmail = this.sendEmail.bind(this);
+        this.setEmailValue = this.setEmailValue.bind(this);
 
 
+    }
+
+    setEmailValue (e) {
+        this.setState({email: e.target.value});
     }
 
     sendEmail(e)  {
@@ -65,13 +70,22 @@ class MedContactUs extends React.Component {
                                 <textarea name="message" id="message" spellCheck="false" data-gramm="false"></textarea>
                             </dd>
                             <div className="med-contact-us-details">
-                                <dd className="mr-2">
+                               <dd className="mr-2">
                                     <label><font ><font >Email </font></font><span><font ><font >*</font></font></span></label>
-                                    <input placeholder="Enter your email" type="email" name="email" className="validate[required,custom[email]] valid" id="email" value=""></input>
-                                </dd>
+                                    <input placeholder="Enter your email" type="email" id="email" name="email" className="validate[required,custom[email]] valid"  value={this.state.email} onChange={this.setEmailValue}></input>
+                                </dd>  
                                 <dd className="med-mobile-details">
-                                    <label><font ><font >Mobile No </font></font><span><font ><font >*</font></font></span></label>
-                                    <PhoneInput
+                                    <label><font ><font >Mobile No </font></font><span><font ><font >*</font></font></span></label>                                 
+                                   <PhoneInput
+                                        country={'in'}
+                                        value={this.state.phone}
+                                        onChange={phone => this.setState({ phone })}
+                             
+                                        />
+                                       { /*<PhoneInput
+                                        country={'us'}
+                                        value={this.state.phone}
+                                        onChange={phone => this.setState({ phone })}
                                         inputProps={{
                                             name: 'phone',
                                             required: true,
@@ -79,7 +93,7 @@ class MedContactUs extends React.Component {
                                         }}
                                         country="in"
                                         placeholder="Enter your Mobile Number"
-                                        />
+                                    /> */ }
                                 </dd>
                             </div>
                             <dd className="dd-100 center submit-btn-container">

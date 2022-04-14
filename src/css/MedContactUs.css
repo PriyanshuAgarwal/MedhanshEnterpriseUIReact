@@ -26,6 +26,10 @@
     width: 100%;
 }
 
+.react-tel-input .selected-flag {
+    padding: 0 0 0 15px !important;
+}
+
 .med-contact-us  .yellow-btn {
     border: solid 1px #f09d0d;
     background: #ffc20e;
@@ -147,7 +151,7 @@
 .med-contact-us .contact-form-container .contact-form input[type=tel] {
     width: 100%;
     font-weight: 400;
-    padding: 10px;
+    padding-left: 70px;
     height: 50px;
     box-sizing: border-box;
     border: solid 1px #70b6fb;
