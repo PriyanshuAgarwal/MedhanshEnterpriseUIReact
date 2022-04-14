@@ -23,24 +23,33 @@ class MedContactUs extends React.Component {
 
         this.sendEmail = this.sendEmail.bind(this);
         this.setEmailValue = this.setEmailValue.bind(this);
+        this.changeMessage = this.changeMessage.bind(this);
 
 
+    }
+
+    changeMessage(e) {
+        this.setState({message: e.target.value});
     }
 
     setEmailValue (e) {
         this.setState({email: e.target.value});
     }
 
-    sendEmail(e)  {
-        console.log(e);
-        e.preventDefault();
-    
-       /* emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-          .then((result) => {
-              console.log(result.text);
+    sendEmail()  {
+        let {message, email, phone} = this.state;
+
+        var templateParams = {
+            message,
+            email, 
+            phone
+        };
+       emailjs.send('service_o8aw74u', 'template_5yw29lp', templateParams, 'ZtsT-y7tztdqF_-no')
+          .then((response) => {
+              console.log('SUCCESS!', response.status, response.text);
           }, (error) => {
-              console.log(error.text);
-          });*/
+              console.log('FAILED...', error);
+          });
       };
 
     render() {
@@ -52,7 +61,6 @@ class MedContactUs extends React.Component {
                     <div className="header">
                         <span className="f2b" style={{marginBottom: "90px !important"}}><font><font >MEDHANSH COMPANIES</font></font></span>
                     </div>
-                    <form>
                         <div className="contact-form-container">
                         <div className="contact-form">
                             <dd className="wd-100">
@@ -67,7 +75,7 @@ class MedContactUs extends React.Component {
                                         <font>Please include product name, order quantity, usage, special requests if any in your inquiry.</font>
                                     </font>
                                 </p>
-                                <textarea name="message" id="message" spellCheck="false" data-gramm="false"></textarea>
+                                <textarea name="message" id="message" spellCheck="false" value={this.state.message} onChange={this.changeMessage} data-gramm="false"></textarea>
                             </dd>
                             <div className="med-contact-us-details">
                                <dd className="mr-2">
@@ -82,30 +90,17 @@ class MedContactUs extends React.Component {
                                         onChange={phone => this.setState({ phone })}
                              
                                         />
-                                       { /*<PhoneInput
-                                        country={'us'}
-                                        value={this.state.phone}
-                                        onChange={phone => this.setState({ phone })}
-                                        inputProps={{
-                                            name: 'phone',
-                                            required: true,
-                                            autoFocus: true
-                                        }}
-                                        country="in"
-                                        placeholder="Enter your Mobile Number"
-                                    /> */ }
                                 </dd>
                             </div>
                             <dd className="dd-100 center submit-btn-container">
                                 <font><font>
-                                    <input value="Send Inquiry" className="btn yellow-btn" name="Submit" type="submit"></input>
+                                    <input value="Send Inquiry" className="btn yellow-btn" onClick={this.sendEmail} type="submit"></input>
                                 </font></font>
                             </dd>
                             <div className="bulk-mssg-container">
                                 <strong><font><font>“We are dealing in bulk order quantity”</font></font><br></br></strong></div>
                         </div>
                         </div>
-                    </form>
                 </div>
                 <MedContactInfo></MedContactInfo>
                 <MedFooter></MedFooter>
