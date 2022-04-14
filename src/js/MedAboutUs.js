@@ -42,6 +42,16 @@ class MedAboutUs extends React.Component {
                     <h5><strong>"We are handing out in bulk order quantity"</strong></h5>
  
                 </div>
+                <div>
+                    <strong><font size="2" face="verdana,arial,helvetica,sans-serif">Product Catalog </font></strong>
+                    <div>
+                        <a href="/Product Catalog.pdf" download="Medhansh Product Catalog">
+                            <img src="/pdf-icon.png"></img>
+                        </a>
+                    </div>
+                    
+                </div>
+                
             </div>
 
 
