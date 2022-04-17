@@ -25,7 +25,7 @@ class MedContactInfo extends React.Component {
                             <div className="extra_cont">
                                 <ul>
                                     <li className="contact">
-                                        <span>Mr. Manoj Sharma ( Owner )</span>
+                                        <span>Mr. Manoj Sharma ( Propriter )</span>
                                     </li>
                                     <li className="contact">
                                         Mobile: <span itemProp="telephone">8630302269</span>
