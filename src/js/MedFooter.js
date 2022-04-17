@@ -16,7 +16,9 @@ class MedFooter extends React.Component {
                         <li><font ><font >|</font></font></li>
                         <li><Link to="/contact-us"><font><font>Contact us</font></font></Link></li>
                     </ul>
-                    <div className="clear"></div></div>
+                    <div className="clear"></div>
+                </div>
+                <div class="static_send_inq"><Link to="/contact-us">Send Inquiry</Link></div>
             </div>
 
 
