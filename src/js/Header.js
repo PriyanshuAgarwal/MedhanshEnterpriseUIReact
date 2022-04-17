@@ -20,7 +20,6 @@ class Header extends React.Component {
                                         <div className="phone">Call: 8630302269, 9717659851</div>
                                         <div className="head_link"><Link className="dropdown-item" to="/contact-us"><img src="https://tiimg.tistatic.com/catalogs/template100001/inquiry-icon.png"  style={{"marginRight": "8px"}}></img>Submit Inquiry</Link><div className="clear"></div></div>
                                     </div>
-                                    <div className="top_trust"><a target="_blank" href="https://www.tradeindia.com/credit_reports/show_ts.html?profile_id=21852800"><img  src="https://tiimg.tistatic.com/new_website1/general/trust_stamp/trust_stamp_logo_big.gif"></img></a></div>
                                 </div>
                             </div>
                         </nav>
