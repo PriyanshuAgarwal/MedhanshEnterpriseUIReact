@@ -303,40 +303,7 @@ let boppTapes = [
 ]
 
 let plasticRawScrapsProducts = [
-    {
-        id: "colour-pp-article-grinding-scrap",
-        title: "Colour PP Article Grinding Scrap",
-        supply_ability: "30-50  Ton Per Month",
-        source_capacity: "30-50 Ton Per Month",
-        price: "40.00 - 50.00 INR/Ton",
-        delivery_time: "3 days",
-        min_order_quantity: "5 Ton",
-        product_description: "We are offering here the Colour PP Article Grinding Scrap for use in the various purposes like different kinds of Articles, Household Products etc. The Grinding uses xed abrasivesthe abrasive particles are bonded to the paper or platenfor fast stock removal. Polishing uses free abrasives on a cloth; that is, the abrasive particles are suspended in a lubricant and can roll or slide across the cloth and specimen. The offered Colour PP Article Grinding Scrap is very useful and effective. ",
-        img: "/Colour-PP-Article-Grinding-Scrap.jpeg",
 
-    },
-    {
-        id: "bopp-printed-roll-waste",
-        title: "BOPP Printed Roll Waste",
-        supply_ability: "30-50 Ton Per Month",
-        price: "45.00 - 50.00 INR/Ton",
-        delivery_time: "3 days",
-        source_capacity: "30-50 Ton Per Month",
-        min_order_quantity: "5 Ton",
-        img: "/BOPP-Printed-Roll-Waste.jpeg",
-        product_description: " The BOPP Printed Roll Waste is offered by us that is a widely used rugged thermoplastic polymer. When polypropylene film is biaxially oriented, BOPP, it becomes crystal clear but remains available in white and matte finishes. The polypropylene film substrate reasonable economics, conformability and fatigue resistance make it ideal for packaging, labeling and graphic applications. BOPP stands for Biaxially Oriented Polypropylene (aka plastic). BOPP Printed Roll Waste is made for use in the various industries as per the need. "
-    },
-    {
-        id: "raffia-grinding-scrap",
-        title: "Raffia Grinding Scrap",
-        supply_ability: "30-50 Ton Per Month",
-        price: "33.00 - 35.00 INR/Ton",
-        delivery_time: "3 days",
-        source_capacity: "30-50 Ton Per Month",
-        min_order_quantity: "5 Ton",
-        product_description: "The Raffia Grinding Scrap is offered by us that is made for commercial uses. The Raffia is harvested from a raffia palm tree and can often be confused with straw. Crafters like to use raffia, a soft and durable natural fiber, to make things like hats. A large palm tree grows leaves that can be stripped and dried to create raffia strands. Like jute or  twine, this is a natural fiber that can be woven like straw. The Raffia Grinding Scrap is highly used.",
-        img: "/Raffia-Grinding-Scrap.jpeg"
-    },
     {
         id: "ldpe-film-roll-scrap",
         title: "LDPE Film Roll Scrap",
