@@ -12,7 +12,7 @@ class MedFooter extends React.Component {
                         <li><font ><font>|</font></font></li>
                         <li><Link to="/company-profile"><font><font>Company profile</font></font></Link> </li>
                         <li><font ><font >|</font></font></li>
-                        <li><Link className="hilight" to="/products/plastic-granules"><font><font>Our Products</font></font></Link></li>
+                        <li><Link className="hilight" to="/products/bopp-tapes"><font><font>Our Products</font></font></Link></li>
                         <li><font ><font >|</font></font></li>
                         <li><Link to="/contact-us"><font><font>Contact us</font></font></Link></li>
                     </ul>
