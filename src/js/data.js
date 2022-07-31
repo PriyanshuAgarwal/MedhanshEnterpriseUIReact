@@ -316,17 +316,6 @@ let plasticRawScrapsProducts = [
         img: "/LDPE-Film-Roll-Scrap.jpeg"
     },
     {
-        id: "pp-article-grinding-scrap",
-        title: "PP Article Grinding Scrap",
-        supply_ability: "30-50 Ton Per Month",
-        price: "40.00 - 50.00 INR/Ton",
-        delivery_time: "3 days",
-        source_capacity: "30-50 Ton Per Month",
-        min_order_quantity: "5 Ton",
-        product_description: "",
-        img: "/PP-Article-Grinding-Scrap.jpeg"
-    },
-    {
         id: "jumbo-bag-scrap",
         title: "Jumbo Bag Scrap",
         supply_ability: "30-50 Ton Per Month",
